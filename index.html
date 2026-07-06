@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="alternate" hreflang="sr" href="index.html">
+<link rel="alternate" hreflang="hu" href="hu.html">
 <title>Marki detekcija curenja vode Subotica | Profesionalno lociranje kvarova</title>
 <meta name="description" content="Profesionalna detekcija curenja vode i lociranje kvarova bez nepotrebnog rušenja. Marki vodovod PR Subotica, 25 godina iskustva, savremena oprema, račun i garancija.">
 <meta name="keywords" content="detekcija curenja vode, lociranje kvara, pukla cev, vodoinstalater Subotica, detekcija vode bez rušenja, detekcija vodovodnih kvarova, akustična detekcija, gasna detekcija, vodovodna mreža, detekcija curenja vode Subotica, detekcija curenja vode Kanjiža, detekcija curenja vode Bačka Topola, detekcija curenja vode Sombor, detekcija curenja vode Čantavir, detekcija curenja vode Horgoš">
@@ -69,6 +71,18 @@ img{max-width:100%;display:block}
 .btn-blue:hover{background:var(--blue-dark);transform:translateY(-2px)}
 .btn-outline{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.7)}
 .btn-outline:hover{background:#fff;color:var(--blue)}
+
+
+/* Language switch */
+.lang-switch{display:flex;align-items:center;gap:7px;white-space:nowrap}
+.lang-switch .flag{width:28px;height:20px;border-radius:4px;border:1px solid var(--grey-2);box-shadow:var(--shadow-sm);display:inline-block;overflow:hidden;transition:.2s;background:#fff}
+.lang-switch .flag:hover{transform:translateY(-2px);border-color:var(--orange)}
+.lang-switch .flag.active{border:2px solid var(--orange)}
+.lang-switch .flag-rs{background:linear-gradient(to bottom,#c6363c 0 33.33%,#0c4076 33.33% 66.66%,#fff 66.66% 100%)}
+.lang-switch .flag-hu{background:linear-gradient(to bottom,#ce2939 0 33.33%,#fff 33.33% 66.66%,#477050 66.66% 100%)}
+@media(max-width:680px){
+  .lang-switch .flag{width:26px;height:18px}
+}
 
 /* Header */
 header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.97);backdrop-filter:blur(8px);box-shadow:0 2px 14px -6px rgba(10,77,162,.25)}
@@ -255,6 +269,10 @@ footer{background:var(--blue-dark);color:#fff;padding:44px 0 22px}
       <li><a href="#kontakt">Kontakt</a></li>
     </ul>
     <div style="display:flex;align-items:center;gap:10px">
+      <div class="lang-switch" aria-label="Izbor jezika">
+        <a href="index.html" class="flag flag-rs active" aria-label="Srpski jezik"></a>
+        <a href="hu.html" class="flag flag-hu" aria-label="Mađarski jezik"></a>
+      </div>
       <a href="tel:+381653028260" class="header-phone" aria-label="Pozovite 065 302 8260">
         <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>
         <span>065 302 8260</span>
